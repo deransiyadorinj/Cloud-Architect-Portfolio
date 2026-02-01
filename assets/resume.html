@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deransiya Dorin J - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: white;
+            padding: 40px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #00d4ff;
+        }
+
+        .name {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0a0e1a;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #0077ff;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0a0e1a;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #ff0080;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .summary {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .education-item,
+        .project-item {
+            margin-bottom: 18px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0a0e1a;
+        }
+
+        .item-subtitle {
+            font-size: 14px;
+            color: #0077ff;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: #888;
+            font-weight: 500;
+        }
+
+        .item-description {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.7;
+            margin-top: 6px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 10px;
+        }
+
+        .skill-category-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #0077ff;
+            margin-bottom: 6px;
+        }
+
+        .skill-list {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .cert-summary {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .cert-domains {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .cert-domain {
+            font-size: 13px;
+            color: #555;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .cert-domain::before {
+            content: '●';
+            position: absolute;
+            left: 0;
+            color: #ff0080;
+        }
+
+        .github-link {
+            color: #0077ff;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .github-link:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-left: 20px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+
+        @media print {
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="name">DERANSIYA DORIN J</h1>
+        <h2 class="title">Aspiring Cloud Engineer</h2>
+        <div class="contact-info">
+            <div class="contact-item">📧 deransiyadorinj@gmail.com</div>
+            <div class="contact-item">📱 +91 7598198386</div>
+            <div class="contact-item">📍 Dindigul, Tamil Nadu, India</div>
+        </div>
+        <div class="contact-info" style="margin-top: 8px;">
+            <div class="contact-item">🔗 github.com/deransiyadorinj</div>
+            <div class="contact-item">💼 linkedin.com/in/deransiyadorin-j-a63185353</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Professional Summary</h3>
+        <p class="summary">
+            Motivated and disciplined B.Tech student specializing in Artificial Intelligence & Data Science with a
+            strong passion for Cloud Computing and DevOps. Actively building expertise to become a professional Cloud
+            Engineer through hands-on learning and practical project implementation. Proficient in Git version control
+            workflows including repository management, commits, and branching. Possess beginner-level hands-on
+            experience with AWS (EC2, S3, IAM), Docker containerization, Jenkins CI/CD, and Linux systems. Committed to
+            continuous learning and applying theoretical knowledge to real-world cloud infrastructure scenarios.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Education</h3>
+        <div class="education-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Bachelor of Technology - Artificial Intelligence & Data Science</div>
+                    <div class="item-subtitle">NPR College of Engineering and Technology</div>
+                    <div class="item-description">Dindigul, Tamil Nadu, India</div>
+                </div>
+                <div class="item-date">Expected 2028</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-category-title">Cloud & DevOps</div>
+                <div class="skill-list">AWS (EC2, S3, IAM) • Docker • Jenkins • Linux</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Version Control</div>
+                <div class="skill-list">Git • GitHub • Repository Management • Branching & Merging</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Programming Languages</div>
+                <div class="skill-list">Python • C • C++ • JavaScript</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Web Technologies</div>
+                <div class="skill-list">HTML • CSS • JavaScript • Responsive Design</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Projects</h3>
+
+        <div class="project-item">
+            <div class="item-title">Git Version Control Project</div>
+            <a href="https://github.com/deransiyadorinj/git.git"
+                class="github-link">github.com/deransiyadorinj/git.git</a>
+            <div class="item-description">
+                Comprehensive hands-on implementation demonstrating expertise in Git version control. Includes practical
+                applications of commits, branching strategies, merging workflows, and repository management essential
+                for collaborative software development.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="item-title">Git GUI Project</div>
+            <a href="https://github.com/deransiyadorinj/Git-GUI.git"
+                class="github-link">github.com/deransiyadorinj/Git-GUI.git</a>
+            <div class="item-description">
+                Demonstrates proficiency with Git graphical user interface tools for visual repository management,
+                showcasing understanding of both command-line and GUI-based workflows for efficient version control
+                operations.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="item-title">Professional Portfolio Website</div>
+            <a href="https://github.com/deransiyadorinj/My-Portfolio.git"
+                class="github-link">github.com/deransiyadorinj/My-Portfolio.git</a>
+            <div class="item-description">
+                Modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. Features premium
+                dark theme with Blue/Pink color scheme, smooth animations, and comprehensive sections showcasing
+                technical skills, projects, and professional information.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Certifications</h3>
+        <p class="cert-summary">
+            <strong>26 Certifications Completed</strong> across diverse technology domains demonstrating commitment to
+            continuous learning and professional development.
+        </p>
+        <div class="cert-domains">
+            <div class="cert-domain">Artificial Intelligence</div>
+            <div class="cert-domain">Cloud Computing</div>
+            <div class="cert-domain">Cyber Security</div>
+            <div class="cert-domain">Ethical Hacking</div>
+            <div class="cert-domain">Data Science & Analytics</div>
+            <div class="cert-domain">Generative AI</div>
+            <div class="cert-domain">UI/UX Design</div>
+            <div class="cert-domain">Leadership & Agile PM</div>
+            <div class="cert-domain">Power BI</div>
+            <div class="cert-domain">Python & C++</div>
+            <div class="cert-domain">Web Development</div>
+            <div class="cert-domain">IoT</div>
+            <div class="cert-domain">Business Analytics</div>
+        </div>
+        <p class="cert-summary" style="margin-top: 12px;">
+            <strong>Notable:</strong> Licensed Certification - AI Tools Workshop | Diploma of Completion - Introduction
+            to UiPath IXP | Webinar Certificate - The Future of Web Development with AI
+        </p>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">Professional Highlights</h3>
+        <ul>
+            <li>Actively studying cloud computing and DevOps technologies with hands-on practical exposure</li>
+            <li>Proficient in Git workflows including commits, branches, merging, and collaboration</li>
+            <li>Continuous learner building projects to strengthen cloud engineering expertise</li>
+            <li>Strong foundation in Linux systems and command-line operations</li>
+            <li>Understanding of AWS cloud services including EC2, S3, and IAM</li>
+            <li>Practical knowledge of containerization with Docker and CI/CD with Jenkins</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #0a0e1a;
+            color: white;
+        }
+
+        .test-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #00d4ff, #ff0080);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .test-link:hover {
+            opacity: 0.9;
+        }
+
+        h1 {
+            color: #00d4ff;
+        }
+
+        p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .url-display {
+            background: #1a1f35;
+            padding: 15px;
+            border-radius: 8px;
+            word-break: break-all;
+            margin: 20px 0;
+            border-left: 4px solid #00d4ff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LinkedIn Link Test</h1>
+
+    <p><strong>Testing the LinkedIn URL:</strong></p>
+
+    <div class="url-display">
+        https://www.linkedin.com/in/deransiyadorin-j-a63185353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+    </div>
+
+    <p>Click the button below to test if the LinkedIn link works correctly:</p>
+
+    <a href="https://www.linkedin.com/in/deransiyadorin-j-a63185353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank" rel="noopener noreferrer" class="test-link">
+        🔗 Test LinkedIn Link
+    </a>
+
+    <p><strong>Expected behavior:</strong> This link should open your LinkedIn profile in a new tab.</p>
+
+    <p><strong>If the link doesn't work:</strong></p>
+    <ul>
+        <li>Check if you're logged into LinkedIn</li>
+        <li>Try copying the URL above and pasting it directly into your browser</li>
+        <li>Check your browser's pop-up blocker settings</li>
+        <li>Try a different browser (Chrome, Firefox, Edge)</li>
+    </ul>
+
+    <hr style="margin: 40px 0; border-color: #00d4ff;">
+
+    <h2 style="color: #ff0080;">Direct Test Links</h2>
+
+    <p>Test with different variations:</p>
+
+    <p>
+        <a href="https://www.linkedin.com/in/deransiyadorin-j-a63185353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" rel="noopener noreferrer" class="test-link">
+            Full URL with UTM parameters
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.linkedin.com/in/deransiyadorin-j-a63185353" target="_blank" rel="noopener noreferrer"
+            class="test-link">
+            Short URL without parameters
+        </a>
+    </p>
+
+    <script>
+        // Log when links are clicked
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                console.log('Link clicked:', this.href);
+                console.log('Target:', this.target);
+                console.log('Full URL:', this.href);
+            });
+        });
+    </script>
+</body>
+
+</html>
