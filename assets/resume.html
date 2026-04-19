@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deransiya Dorin J - Resume | Aspiring Cloud Architect</title>
+    <title>Deransiya Dorin J — Cloud Architect Resume</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap');
 
         * {
             margin: 0;
@@ -16,396 +16,540 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: white;
-            padding: 40px;
-            max-width: 850px;
+            line-height: 1.65;
+            color: #2d2d2d;
+            background: #ffffff;
+            padding: 48px 52px;
+            max-width: 900px;
             margin: 0 auto;
+            font-size: 14px;
         }
 
+        /* ─── HEADER ─── */
         .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 3px solid #00d4ff;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: start;
+            gap: 20px;
+            margin-bottom: 28px;
+            padding-bottom: 22px;
+            border-bottom: 3px solid #0077ff;
         }
 
         .name {
-            font-size: 36px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 34px;
             font-weight: 700;
             color: #0a0e1a;
-            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
         }
 
-        .title {
-            font-size: 20px;
+        .name span {
             color: #0077ff;
-            font-weight: 600;
-            margin-bottom: 15px;
         }
 
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            font-size: 13px;
-            color: #555;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .section {
-            margin-bottom: 25px;
-        }
-
-        .section-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #0a0e1a;
-            margin-bottom: 12px;
-            padding-bottom: 6px;
-            border-bottom: 2px solid #ff0080;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .summary {
-            font-size: 14px;
-            color: #333;
-            line-height: 1.8;
-            text-align: justify;
-        }
-
-        .education-item,
-        .project-item {
-            margin-bottom: 18px;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 6px;
-        }
-
-        .item-title {
+        .career-title {
             font-size: 16px;
-            font-weight: 600;
-            color: #0a0e1a;
-        }
-
-        .item-subtitle {
-            font-size: 14px;
-            color: #0077ff;
             font-weight: 500;
-            margin-bottom: 4px;
-        }
-
-        .item-date {
-            font-size: 13px;
-            color: #888;
-            font-weight: 500;
-        }
-
-        .item-description {
-            font-size: 13px;
-            color: #555;
-            line-height: 1.7;
+            color: #444;
             margin-top: 6px;
         }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+        .contact-block {
+            text-align: right;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.9;
         }
 
-        .skill-category {
-            margin-bottom: 10px;
-        }
-
-        .skill-category-title {
-            font-size: 14px;
-            font-weight: 600;
+        .contact-block a {
             color: #0077ff;
-            margin-bottom: 6px;
+            text-decoration: none;
         }
 
-        .skill-list {
-            font-size: 13px;
-            color: #555;
-            line-height: 1.6;
+        /* ─── SECTION ─── */
+        .section {
+            margin-bottom: 26px;
         }
 
-        .cert-summary {
-            font-size: 14px;
-            color: #333;
-            line-height: 1.8;
-        }
-
-        .cert-domains {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            margin-top: 12px;
-        }
-
-        .cert-domain {
-            font-size: 13px;
-            color: #555;
-            padding-left: 15px;
-            position: relative;
-        }
-
-        .cert-domain::before {
-            content: '●';
-            position: absolute;
-            left: 0;
-            color: #ff0080;
-        }
-
-        .cert-notable {
-            margin-top: 14px;
-            padding: 12px 16px;
-            background: #f0f8ff;
-            border-left: 4px solid #00d4ff;
-            border-radius: 4px;
-        }
-
-        .cert-notable-title {
+        .section-title {
+            font-family: 'Poppins', sans-serif;
             font-size: 13px;
             font-weight: 700;
             color: #0a0e1a;
-            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #ff0080;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .cert-notable-list {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 5px;
+        /* ─── PROFESSIONAL SUMMARY ─── */
+        .summary {
+            font-size: 14px;
+            color: #3a3a3a;
+            line-height: 1.85;
+            text-align: justify;
+            background: #f8faff;
+            border-left: 4px solid #0077ff;
+            padding: 14px 18px;
+            border-radius: 0 6px 6px 0;
         }
 
-        .cert-notable-list li {
-            font-size: 12px;
+        /* ─── EDUCATION ─── */
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .edu-degree {
+            font-size: 15px;
+            font-weight: 600;
+            color: #0a0e1a;
+        }
+
+        .edu-institution {
+            font-size: 13.5px;
+            color: #0077ff;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        .edu-location {
+            font-size: 13px;
+            color: #777;
+            margin-top: 2px;
+        }
+
+        .edu-date {
+            font-size: 13px;
+            color: #888;
+            font-weight: 500;
+            white-space: nowrap;
+            background: #f0f4ff;
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+
+        /* ─── SKILLS GRID ─── */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .skills-table tr td {
+            padding: 6px 12px 6px 0;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        .skill-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #0077ff;
+            min-width: 160px;
+            white-space: nowrap;
+        }
+
+        .skill-value {
+            font-size: 13px;
             color: #444;
-            padding-left: 14px;
-            position: relative;
+            line-height: 1.6;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #f0f4ff;
+            color: #0055cc;
+            border-radius: 4px;
+            padding: 1px 7px;
+            font-size: 12px;
+            margin: 2px 2px 2px 0;
+            font-weight: 500;
+        }
+
+        /* ─── PROJECTS ─── */
+        .project-item {
+            margin-bottom: 18px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
             margin-bottom: 0;
         }
 
-        .cert-notable-list li::before {
-            content: '★';
-            position: absolute;
-            left: 0;
-            color: #ffc107;
-            font-size: 10px;
+        .project-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
         }
 
-        .github-link {
+        .project-title {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: #0a0e1a;
+        }
+
+        .project-link {
             color: #0077ff;
             text-decoration: none;
             font-size: 12px;
+            font-weight: 400;
         }
 
-        .github-link:hover {
+        .project-link:hover {
             text-decoration: underline;
         }
 
-        ul {
-            margin-left: 20px;
+        .project-desc {
             font-size: 13px;
             color: #555;
+            line-height: 1.7;
+            margin-top: 5px;
         }
 
-        ul li {
-            margin-bottom: 6px;
+        /* ─── CERTIFICATIONS ─── */
+        .cert-count-line {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .cert-count-line strong {
+            color: #0077ff;
+        }
+
+        .cert-domains-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px 20px;
+            margin-bottom: 14px;
+        }
+
+        .cert-domain-item {
+            font-size: 13px;
+            color: #444;
+            padding-left: 14px;
+            position: relative;
             line-height: 1.6;
+        }
+
+        .cert-domain-item::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #ff0080;
+            font-size: 12px;
+        }
+
+        .notable-certs {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 12px 16px;
+            border-radius: 0 6px 6px 0;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .notable-certs strong {
+            color: #333;
+        }
+
+        .cert-badge {
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 1px 8px;
+            font-size: 12px;
+            margin: 2px;
+            color: #333;
+        }
+
+        .cert-badge.gold {
+            background: #fffbea;
+            border-color: #f59e0b;
+            color: #92400e;
+            font-weight: 500;
+        }
+
+        /* ─── ACHIEVEMENTS ─── */
+        .achievements-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .achievements-list li {
+            font-size: 13.5px;
+            color: #3a3a3a;
+            padding: 6px 0 6px 22px;
+            position: relative;
+            border-bottom: 1px solid #f5f5f5;
+            line-height: 1.65;
+        }
+
+        .achievements-list li:last-child {
+            border-bottom: none;
+        }
+
+        .achievements-list li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: #ff0080;
+            font-size: 11px;
+            top: 8px;
+        }
+
+        .badge-inline {
+            display: inline-block;
+            background: linear-gradient(135deg, #0077ff22, #ff008022);
+            color: #0a0e1a;
+            border-radius: 3px;
+            padding: 0 6px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid #0077ff44;
         }
 
         @media print {
             body {
-                padding: 20px;
+                padding: 28px 34px;
+                font-size: 13px;
+            }
+            .section {
+                margin-bottom: 20px;
+                page-break-inside: avoid;
             }
         }
     </style>
 </head>
 
 <body>
+
+    <!-- ═══════════ HEADER ═══════════ -->
     <div class="header">
-        <h1 class="name">DERANSIYA DORIN J</h1>
-        <h2 class="title">Aspiring Cloud Architect</h2>
-        <div class="contact-info">
-            <div class="contact-item">📧 deransiyadorinj@gmail.com</div>
-            <div class="contact-item">📱 +91 759*******</div>
-            <div class="contact-item">📍 Dindigul, Tamil Nadu, India</div>
+        <div>
+            <div class="name">Deransiya <span>Dorin J</span></div>
+            <div class="career-title">Aspiring Cloud Architect &nbsp;|&nbsp; AI &amp; Data Science Student</div>
         </div>
-        <div class="contact-info" style="margin-top: 8px;">
-            <div class="contact-item">🔗 github.com/deransiyadorinj</div>
-            <div class="contact-item">💼 linkedin.com/in/deransiyadorin-j-a63185353</div>
+        <div class="contact-block">
+            📧 <a href="mailto:deransiyadorinj@gmail.com">deransiyadorinj@gmail.com</a><br>
+            📱 +91 759*******<br>
+            📍 Dindigul, Tamil Nadu, India<br>
+            🔗 <a href="https://github.com/deransiyadorinj" target="_blank">github.com/deransiyadorinj</a><br>
+            💼 <a href="https://linkedin.com/in/deransiyadorin-j-a63185353" target="_blank">linkedin.com/in/deransiyadorin-j</a>
         </div>
     </div>
 
+    <!-- ═══════════ PROFESSIONAL SUMMARY ═══════════ -->
     <div class="section">
-        <h3 class="section-title">Professional Summary</h3>
+        <div class="section-title">🧑‍💼 Professional Summary</div>
         <p class="summary">
-            Motivated and disciplined B.Tech student specializing in Artificial Intelligence &amp; Data Science with a
-            strong passion for Cloud Computing, Networking, and DevOps. Actively building expertise to become a
-            professional <strong>Cloud Architect</strong> through hands-on learning and practical project implementation.
-            Proficient in Git version control, AWS (EC2, S3, IAM), Docker, Jenkins CI/CD, Linux systems, and
-            Networking fundamentals (TCP/IP, OSI Model, Subnetting). Completed Data Analytics course with distinction
-            and recognized as <strong>Class Topper</strong> in the AI &amp; Data Science department. Earned 29+
-            certifications across Cloud, Networking, AI, Security, and more technology domains.
+            I am a motivated B.Tech student specializing in <strong>Artificial Intelligence &amp; Data Science</strong>
+            with a strong drive to build a career as a <strong>Cloud Architect</strong>. I have developed hands-on
+            experience with cloud platforms (AWS EC2, S3, IAM), containerization (Docker), CI/CD automation (Jenkins),
+            Linux systems, and networking fundamentals (TCP/IP, OSI Model, Subnetting). I am currently deepening my
+            knowledge in <strong>computer networking</strong> and <strong>infrastructure design</strong> to architect
+            scalable, secure, and cost-effective cloud solutions. With <strong>29 certifications</strong> across
+            diverse tech domains, including recognition as <strong>Class Topper</strong> in my department and a
+            Hackathon participation certificate from CIT, I bring a consistent record of learning, building, and
+            achieving.
         </p>
     </div>
 
+    <!-- ═══════════ EDUCATION ═══════════ -->
     <div class="section">
-        <h3 class="section-title">Education</h3>
-        <div class="education-item">
-            <div class="item-header">
-                <div>
-                    <div class="item-title">Bachelor of Technology - Artificial Intelligence &amp; Data Science</div>
-                    <div class="item-subtitle">NPR College of Engineering and Technology</div>
-                    <div class="item-description">Dindigul, Tamil Nadu, India</div>
-                </div>
-                <div class="item-date">Expected 2028</div>
+        <div class="section-title">🎓 Education</div>
+        <div class="edu-item">
+            <div>
+                <div class="edu-degree">B.Tech — Artificial Intelligence &amp; Data Science</div>
+                <div class="edu-institution">NPR College of Engineering and Technology</div>
+                <div class="edu-location">Dindigul, Tamil Nadu, India &nbsp;|&nbsp; CGPA: Pursuing</div>
+            </div>
+            <div class="edu-date">2024 — 2028</div>
+        </div>
+    </div>
+
+    <!-- ═══════════ TECHNICAL SKILLS ═══════════ -->
+    <div class="section">
+        <div class="section-title">⚙️ Technical Skills</div>
+        <table class="skills-table">
+            <tr>
+                <td>
+                    <span class="skill-label">Cloud &amp; DevOps</span><br>
+                    <span class="skill-tag">AWS EC2</span>
+                    <span class="skill-tag">AWS S3</span>
+                    <span class="skill-tag">AWS IAM</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">Linux</span>
+                </td>
+                <td>
+                    <span class="skill-label">Networking</span><br>
+                    <span class="skill-tag">TCP/IP</span>
+                    <span class="skill-tag">OSI Model</span>
+                    <span class="skill-tag">Subnetting</span>
+                    <span class="skill-tag">Routing &amp; Switching</span>
+                    <span class="skill-tag">VLAN</span>
+                    <span class="skill-tag">DNS / DHCP</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="skill-label">Cloud Architecture</span><br>
+                    <span class="skill-tag">Multi-tier Design</span>
+                    <span class="skill-tag">High Availability</span>
+                    <span class="skill-tag">Cost Optimization</span>
+                    <span class="skill-tag">Terraform (Basics)</span>
+                </td>
+                <td>
+                    <span class="skill-label">Version Control</span><br>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Branching &amp; Merging</span>
+                    <span class="skill-tag">Repository Management</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="skill-label">Programming</span><br>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Bash Scripting</span>
+                </td>
+                <td>
+                    <span class="skill-label">Data Analytics</span><br>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Python Analytics</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Business Analytics</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="skill-label">Web Technologies</span><br>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Responsive Design</span>
+                </td>
+                <td>
+                    <span class="skill-label">Soft Skills</span><br>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Self-Learning</span>
+                    <span class="skill-tag">Agile Mindset</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <div class="section">
+        <div class="section-title">🚀 Projects</div>
+
+        <div class="project-item">
+            <div class="project-line">
+                <div class="project-title">Git Version Control Project</div>
+                <a href="https://github.com/deransiyadorinj/git.git" class="project-link">↗ github.com/deransiyadorinj/git</a>
+            </div>
+            <div class="project-desc">
+                Comprehensive hands-on implementation of Git commands covering commits, branching strategies, merging
+                workflows, conflict resolution, and collaborative repository management — essential skills for any
+                cloud or DevOps engineering role.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-line">
+                <div class="project-title">Git GUI Project</div>
+                <a href="https://github.com/deransiyadorinj/Git-GUI.git" class="project-link">↗ github.com/deransiyadorinj/Git-GUI</a>
+            </div>
+            <div class="project-desc">
+                Demonstrates proficiency with Git graphical user interface tools, showcasing visual repository
+                management and understanding of both command-line and GUI-based version control workflows for
+                efficient team collaboration.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-line">
+                <div class="project-title">Professional Portfolio Website</div>
+                <a href="https://github.com/deransiyadorinj/My-Portfolio.git" class="project-link">↗ github.com/deransiyadorinj/My-Portfolio</a>
+            </div>
+            <div class="project-desc">
+                Built a modern, responsive personal portfolio using HTML5, CSS3, and JavaScript. Features a dark-themed
+                premium design with gradient accents, smooth animations, and sections covering skills, projects,
+                certifications, and contact — fully mobile-responsive.
             </div>
         </div>
     </div>
 
+    <!-- ═══════════ CERTIFICATIONS ═══════════ -->
     <div class="section">
-        <h3 class="section-title">Technical Skills</h3>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <div class="skill-category-title">Cloud &amp; DevOps</div>
-                <div class="skill-list">AWS (EC2, S3, IAM) • Docker • Jenkins • Linux • Cloud Architecture</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">Networking</div>
-                <div class="skill-list">TCP/IP • OSI Model • Subnetting • Routing &amp; Switching • Network Protocols • VLAN</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">Version Control</div>
-                <div class="skill-list">Git • GitHub • Repository Management • Branching &amp; Merging</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">Programming Languages</div>
-                <div class="skill-list">Python • C • C++ • JavaScript</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">Data Analytics</div>
-                <div class="skill-list">Power BI • Python Analytics • Data Visualization • Business Analytics</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">Infrastructure as Code</div>
-                <div class="skill-list">Terraform (Basics) • Cloud Automation • Infrastructure Provisioning</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">Web Technologies</div>
-                <div class="skill-list">HTML5 • CSS3 • JavaScript • Responsive Design</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-category-title">AI &amp; Machine Learning</div>
-                <div class="skill-list">AI Tools • Generative AI • ML Basics • UiPath RPA</div>
-            </div>
-        </div>
-    </div>
+        <div class="section-title">🏆 Certifications</div>
 
-    <div class="section">
-        <h3 class="section-title">Projects</h3>
-
-        <div class="project-item">
-            <div class="item-title">Git Version Control Project</div>
-            <a href="https://github.com/deransiyadorinj/git.git"
-                class="github-link">github.com/deransiyadorinj/git.git</a>
-            <div class="item-description">
-                Comprehensive hands-on implementation demonstrating expertise in Git version control. Includes practical
-                applications of commits, branching strategies, merging workflows, and repository management essential
-                for collaborative software development.
-            </div>
-        </div>
-
-        <div class="project-item">
-            <div class="item-title">Git GUI Project</div>
-            <a href="https://github.com/deransiyadorinj/Git-GUI.git"
-                class="github-link">github.com/deransiyadorinj/Git-GUI.git</a>
-            <div class="item-description">
-                Demonstrates proficiency with Git graphical user interface tools for visual repository management,
-                showcasing understanding of both command-line and GUI-based workflows for efficient version control
-                operations.
-            </div>
-        </div>
-
-        <div class="project-item">
-            <div class="item-title">Professional Portfolio Website</div>
-            <a href="https://github.com/deransiyadorinj/My-Portfolio.git"
-                class="github-link">github.com/deransiyadorinj/My-Portfolio.git</a>
-            <div class="item-description">
-                Modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. Features premium
-                dark theme with Blue/Pink color scheme, smooth animations, and comprehensive sections showcasing
-                technical skills, projects, and professional information.
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h3 class="section-title">Certifications — 29 Total</h3>
-        <p class="cert-summary">
-            <strong>29 Certifications Completed</strong> across 15 diverse technology domains demonstrating commitment
-            to continuous learning and professional development.
+        <p class="cert-count-line">
+            <strong>29 Certifications Completed</strong> across diverse technology domains — demonstrating consistent
+            commitment to professional growth and continuous learning.
         </p>
-        <div class="cert-domains">
-            <div class="cert-domain">Artificial Intelligence</div>
-            <div class="cert-domain">Cloud Computing</div>
-            <div class="cert-domain">Cyber Security</div>
-            <div class="cert-domain">Ethical Hacking</div>
-            <div class="cert-domain">Data Science &amp; Analytics</div>
-            <div class="cert-domain">Generative AI</div>
-            <div class="cert-domain">UI/UX Design</div>
-            <div class="cert-domain">Leadership &amp; Agile PM</div>
-            <div class="cert-domain">Power BI</div>
-            <div class="cert-domain">Python &amp; C++</div>
-            <div class="cert-domain">Web Development</div>
-            <div class="cert-domain">IoT</div>
-            <div class="cert-domain">Business Analytics</div>
-            <div class="cert-domain">Networking</div>
-            <div class="cert-domain">Cloud Architecture</div>
+
+        <div class="cert-domains-grid">
+            <div class="cert-domain-item">Artificial Intelligence</div>
+            <div class="cert-domain-item">Machine Learning</div>
+            <div class="cert-domain-item">Cloud Computing</div>
+            <div class="cert-domain-item">Cyber Security</div>
+            <div class="cert-domain-item">Ethical Hacking</div>
+            <div class="cert-domain-item">Network Security</div>
+            <div class="cert-domain-item">Data Science &amp; Analytics</div>
+            <div class="cert-domain-item">Generative AI</div>
+            <div class="cert-domain-item">UI/UX Design</div>
+            <div class="cert-domain-item">Leadership &amp; Agile PM</div>
+            <div class="cert-domain-item">Power BI</div>
+            <div class="cert-domain-item">Python &amp; C++</div>
+            <div class="cert-domain-item">Web Development</div>
+            <div class="cert-domain-item">IoT</div>
+            <div class="cert-domain-item">Business Analytics</div>
         </div>
 
-        <div class="cert-notable">
-            <div class="cert-notable-title">🌟 Notable Achievements &amp; Certifications:</div>
-            <ul class="cert-notable-list">
-                <li>Licensed Certification — AI Tools Workshop</li>
-                <li>Diploma of Completion — UiPath IXP (RPA)</li>
-                <li>Webinar Certificate — Future of Web Dev with AI</li>
-                <li>🏆 Hackathon Certificate — CIT</li>
-                <li>📊 Course Completion — Data Analytics</li>
-                <li>🏅 Class Topper — AI &amp; Data Science Dept.</li>
-                <li>Networking Fundamentals — TCP/IP &amp; Protocols</li>
-                <li>Cloud Architecture — AWS Multi-tier Design</li>
-            </ul>
+        <div class="notable-certs">
+            <strong>Notable &amp; Special Certifications:</strong><br>
+            <span class="cert-badge gold">🏅 Class Topper — AI &amp; Data Science Dept.</span>
+            <span class="cert-badge gold">🏆 Hackathon Participant — CIT</span>
+            <span class="cert-badge gold">📊 Course Completion — Data Analytics</span>
+            <span class="cert-badge">Licensed — AI Tools Workshop</span>
+            <span class="cert-badge">Diploma — Intro to UiPath IXP (RPA)</span>
+            <span class="cert-badge">Webinar — Future of Web Dev with AI</span>
         </div>
     </div>
 
+    <!-- ═══════════ PROFESSIONAL HIGHLIGHTS ═══════════ -->
     <div class="section">
-        <h3 class="section-title">Professional Highlights</h3>
-        <ul>
-            <li>Actively studying <strong>Cloud Computing, Networking, and DevOps</strong> with hands-on practical exposure</li>
-            <li>Proficient in Git workflows — commits, branches, merging, and collaboration</li>
-            <li>Continuous learner building projects to strengthen Cloud Architect expertise</li>
-            <li>Strong foundation in Linux systems, command-line operations, and Networking fundamentals</li>
-            <li>Understanding of AWS cloud services including EC2, S3, and IAM</li>
-            <li>Practical knowledge of containerization with Docker and CI/CD with Jenkins</li>
-            <li>🏆 Hackathon participant at CIT | 🏅 Class Topper — AI &amp; Data Science Dept.</li>
-            <li>📜 29 Certifications across Cloud, Networking, AI, Security, and Analytics domains</li>
+        <div class="section-title">⭐ Professional Highlights</div>
+        <ul class="achievements-list">
+            <li>Recognized as <span class="badge-inline">Class Topper</span> in the AI &amp; Data Science department — consistent academic excellence</li>
+            <li>Earned a <span class="badge-inline">Hackathon Certificate</span> from CIT — demonstrated real-world problem-solving under pressure</li>
+            <li>Completed a dedicated <span class="badge-inline">Data Analytics Course</span> with practical Python and Power BI projects</li>
+            <li>Currently studying <strong>Computer Networking</strong> (TCP/IP, OSI, Subnetting, Routing) to strengthen cloud architecture foundations</li>
+            <li>Hands-on exposure to <strong>AWS EC2, S3, IAM</strong>, Docker containerization, and Jenkins CI/CD pipelines</li>
+            <li>Earned <strong>29 certifications</strong> across Cloud, DevOps, Security, AI, Analytics, and Development domains</li>
+            <li>Proficient in Git workflows — version control, branching strategies, conflict resolution, and open-source collaboration</li>
+            <li>Strong foundation in Linux CLI, scripting, and system administration fundamentals</li>
         </ul>
     </div>
-</body>
 
+</body>
 </html>
