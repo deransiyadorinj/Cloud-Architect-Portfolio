@@ -1,6 +1,6 @@
 # 🌟 Deransiya Dorin J - Professional Portfolio
 
-A modern, responsive personal portfolio website showcasing my journey as an aspiring Cloud Engineer.
+A modern, responsive personal portfolio website showcasing my journey as an aspiring Cloud Architect.
 
 ## 🎨 Design Features
 
@@ -38,7 +38,7 @@ My New Portfolio/
 2. **About** - Professional summary and education details
 3. **Skills** - Technical skills in Cloud, DevOps, and Programming
 4. **Projects** - Featured GitHub projects with live links
-5. **Certifications** - 26 certifications across diverse domains
+5. **Certifications** - 29 certifications across diverse domains
 6. **Resume** - Downloadable professional resume
 7. **Contact** - Get in touch via email, phone, or social media
 
@@ -76,12 +76,12 @@ My New Portfolio/
 ## 📧 Contact
 
 - **Email**: deransiyadorinj@gmail.com
-- **Phone**: +91 7598198386
+- **Phone**: +91 759*******
 - **Location**: Dindigul, Tamil Nadu, India
 
 ## 🎓 About Me
 
-I'm a B.Tech student specializing in Artificial Intelligence & Data Science at NPR College of Engineering and Technology, with a strong passion for Cloud Computing and DevOps. Currently building expertise in AWS, Docker, Jenkins, and cloud infrastructure.
+I'm a B.Tech student specializing in Artificial Intelligence & Data Science at NPR College of Engineering and Technology, with a strong passion for Cloud Computing, Networking, and DevOps. Actively building expertise to become a **Cloud Architect** — hands-on with AWS, Docker, Jenkins, Networking fundamentals, and cloud infrastructure. Holder of 29 professional certifications.
 
 ## 📝 License
 
@@ -89,4 +89,4 @@ I'm a B.Tech student specializing in Artificial Intelligence & Data Science at N
 
 ---
 
-**Built with passion for Cloud Engineering** ☁️
+**Built with passion for Cloud Architecture** ☁️
