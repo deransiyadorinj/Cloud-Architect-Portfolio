@@ -71,7 +71,7 @@ My New Portfolio/
 ## 🔗 Important Links
 
 - **GitHub**: [github.com/deransiyadorinj](https://github.com/deransiyadorinj)
-- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/deransiyadorin-j-a63185353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/deransiya-dorin-j-a63185353)
 
 ## 📧 Contact
 
