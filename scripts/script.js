@@ -110,7 +110,7 @@ function updateActiveNavOnScroll() {
 
 // ===== SCROLL ANIMATIONS =====
 function initScrollAnimations() {
-    const revealElements = document.querySelectorAll('.skill-card, .project-card, .info-item, .contact-card, .domain-badge, .highlight-card');
+    const revealElements = document.querySelectorAll('.skill-card, .project-card, .info-item, .contact-card, .domain-badge, .highlight-card, .cert-card');
     
     // Add reveal class to elements
     revealElements.forEach(el => {
@@ -260,3 +260,114 @@ console.log('%c👋 Hello, Developer!', 'color: #00d4ff; font-size: 24px; font-w
 console.log('%cWelcome to Deransiya Dorin J\'s Portfolio', 'color: #ff0080; font-size: 16px;');
 console.log('%cInterested in the code? Check out the GitHub repo!', 'color: #b8c5d6; font-size: 14px;');
 console.log('%c🔗 https://github.com/deransiyadorinj', 'color: #00d4ff; font-size: 14px;');
+
+// ===== IMAGE GALLERY / LIGHTBOX =====
+const galleryData = {
+    proj1: [
+        'assets/proj1-cover.png',
+        'assets/proj1-2.png',
+        'assets/proj1-3.png',
+        'assets/proj1-4.png',
+        'assets/proj1-5.png',
+        'assets/proj1-6.png',
+        'assets/proj1-7.png',
+        'assets/proj1-8.png',
+        'assets/proj1-9.png'
+    ],
+    proj2: [
+        'assets/proj2-cover.png',
+        'assets/proj2-2.png',
+        'assets/proj2-3.png',
+        'assets/proj2-4.png',
+        'assets/proj2-5.png',
+        'assets/proj2-6.png',
+        'assets/proj2-7.png'
+    ],
+    proj3: [
+        'assets/proj3-cover.png',
+        'assets/proj3-2.png',
+        'assets/proj3-3.png',
+        'assets/proj3-4.png'
+    ],
+    certificates: [
+        'assets/certificates/cert-ai-tools-chatgpt.png',
+        'assets/certificates/cert-intro-genai.png',
+        'assets/certificates/cert-intro-ai.png',
+        'assets/certificates/cert-uiux-chatgpt.png',
+        'assets/certificates/cert-cloud-computing.png',
+        'assets/certificates/cert-python-essentials-1.png',
+        'assets/certificates/cert-python-essentials-2.png',
+        'assets/certificates/cert-networking-basics.png',
+        'assets/certificates/cert-networking-devices.png',
+        'assets/certificates/cert-cyber-security.png',
+        'assets/certificates/cert-kali-linux.png',
+        'assets/certificates/cert-data-analytics-ai.png',
+        'assets/certificates/cert-agile-pm.png',
+        'assets/certificates/cert-cit-hackathon.png',
+        'assets/certificates/cert-fullstack-internship.png',
+        'assets/certificates/cert-topper-of-class.png',
+        'assets/certificates/cert-web-development.png',
+        'assets/certificates/cert-intro-iot.png'
+    ]
+};
+
+let currentGallery = [];
+let currentIndex = 0;
+
+function openGallery(projectKey, startIndex) {
+    currentGallery = galleryData[projectKey] || [];
+    currentIndex = startIndex || 0;
+    if (currentGallery.length === 0) return;
+    const modal = document.getElementById('galleryModal');
+    const img = document.getElementById('galleryModalImg');
+    const counter = document.getElementById('galleryCounter');
+    img.src = currentGallery[currentIndex];
+    counter.textContent = (currentIndex + 1) + ' / ' + currentGallery.length;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function openSingleImage(src) {
+    currentGallery = [src];
+    currentIndex = 0;
+    const modal = document.getElementById('galleryModal');
+    const img = document.getElementById('galleryModalImg');
+    const counter = document.getElementById('galleryCounter');
+    img.src = src;
+    counter.textContent = '';
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeGallery() {
+    const modal = document.getElementById('galleryModal');
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    currentGallery = [];
+    currentIndex = 0;
+}
+
+function closeGalleryOnBackdrop(e) {
+    if (e.target === document.getElementById('galleryModal')) {
+        closeGallery();
+    }
+}
+
+function changeGalleryImage(direction) {
+    if (currentGallery.length <= 1) return;
+    currentIndex = (currentIndex + direction + currentGallery.length) % currentGallery.length;
+    const img = document.getElementById('galleryModalImg');
+    const counter = document.getElementById('galleryCounter');
+    img.src = currentGallery[currentIndex];
+    counter.textContent = (currentIndex + 1) + ' / ' + currentGallery.length;
+}
+
+// Keyboard navigation for gallery
+document.addEventListener('keydown', function(e) {
+    const modal = document.getElementById('galleryModal');
+    if (!modal || !modal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeGallery();
+    if (e.key === 'ArrowLeft') changeGalleryImage(-1);
+    if (e.key === 'ArrowRight') changeGalleryImage(1);
+});
+

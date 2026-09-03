@@ -35,7 +35,12 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">Deransiya<span class="gradient-text">Dorin</span></span>
+                <a href="https://www.instagram.com/edencloudixtechnologies?igsi=dWJnNTk3dWxyYWx6" target="_blank" rel="noopener noreferrer" title="Edencloudix Technologies">
+                    <img src="assets/edencloudixtechnologies.jpeg" alt="Edencloudix Technologies Logo" class="company-logo-nav">
+                </a>
+                <a href="#home" class="logo-text-link">
+                    <span class="logo-text">Deransiya<span class="gradient-text">Dorin</span></span>
+                </a>
             </div>
             <div class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link active">Home</a>
@@ -73,9 +78,13 @@
                             <i class="fas fa-code"></i> View Projects
                         </a>
                         <a href="https://www.linkedin.com/in/deransiyadorin-j-a63185353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                            target="_blank" rel="noopener noreferrer" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-linkedin"
                             onclick="window.open(this.href, '_blank'); return false;">
                             <i class="fab fa-linkedin"></i> LinkedIn Profile
+                        </a>
+                        <a href="https://www.instagram.com/edencloudixtechnologies?igsi=dWJnNTk3dWxyYWx6"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-insta-company">
+                            <i class="fab fa-instagram"></i> Edencloudix Technologies
                         </a>
                     </div>
                 </div>
@@ -277,82 +286,175 @@
                     <p>Terraform basics, cloud automation and infrastructure provisioning concepts</p>
                     <span class="skill-level">Learning</span>
                 </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Generative AI &amp; Tools</h3>
+                    <p>ChatGPT workflows, Generative AI Studio, prompt engineering, and AI-accelerated development</p>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Cyber Security &amp; Kali Linux</h3>
+                    <p>Kali Linux fundamentals, ethical hacking principles, and network security defenses</p>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full Stack Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript, PHP, SQL databases, and full stack web architecture</p>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Agile Project Management</h3>
+                    <p>Scrum workflows, sprint execution, Kanban delivery, and cross-functional leadership</p>
+                    <span class="skill-level">Intermediate</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="video-projects-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
                 <div class="title-underline"></div>
-                <p class="section-subtitle">Hands-on implementations demonstrating practical skills</p>
+                <p class="section-subtitle">Full Stack, Cloud, and Networking projects with live demos</p>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fab fa-git-alt"></i>
+
+            <!-- PROJECT 1: Tamilji Holidays -->
+            <div class="vp-card">
+                <div class="vp-badge">Full Stack Project</div>
+                <div class="vp-body">
+                    <div class="vp-gallery">
+                        <img src="assets/proj1-cover.png" alt="Tamilji Holidays Cover"
+                            class="vp-cover-img"
+                            onclick="openGallery('proj1', 0)"
+                            title="Click to view all images">
+                        <div class="vp-gallery-hint"><i class="fas fa-images"></i> Click to view gallery</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Git Version Control Project</h3>
-                        <p>Comprehensive hands-on implementation of Git commands, demonstrating expertise in commits,
-                            branching strategies, merging, and repository workflows. This project showcases practical
-                            version control skills essential for collaborative development.</p>
+                    <div class="vp-details">
+                        <h3 class="vp-title">Tamilji Holidays</h3>
+                        <p class="vp-desc">A complete Full Stack web application for a travel/holiday business. Both frontend and backend are integrated with a fully functional admin panel for managing bookings and content.</p>
                         <div class="project-tags">
-                            <span class="tag">Git</span>
-                            <span class="tag">Version Control</span>
-                            <span class="tag">CLI</span>
+                            <span class="tag">Full Stack</span>
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Backend</span>
+                            <span class="tag">Admin Panel</span>
+                        </div>
+                        <div class="vp-links">
+                            <a href="https://github.com/deransiyadorinj/tamilji-holidays.git" target="_blank" rel="noopener noreferrer" class="vp-btn vp-btn-github">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="https://www.instagram.com/reel/Dc0Atgyvs0s" target="_blank" rel="noopener noreferrer" class="vp-btn vp-btn-insta">
+                                <i class="fab fa-instagram"></i> Project Demo
+                            </a>
+                            <a href="https://lnkd.in/p/gEmrGWjS" target="_blank" rel="noopener noreferrer" class="vp-btn vp-btn-linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn Post
+                            </a>
                         </div>
                     </div>
-                    <a href="https://github.com/deransiyadorinj/git.git" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-project">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-desktop"></i>
+            </div>
+
+            <!-- PROJECT 2: Cloud Monitoring Digital Twin -->
+            <div class="vp-card">
+                <div class="vp-badge vp-badge-cloud">Cloud Project</div>
+                <div class="vp-body">
+                    <div class="vp-gallery">
+                        <img src="assets/proj2-cover.png" alt="Cloud Monitoring Digital Twin Cover"
+                            class="vp-cover-img"
+                            onclick="openGallery('proj2', 0)"
+                            title="Click to view all images">
+                        <div class="vp-gallery-hint"><i class="fas fa-images"></i> Click to view gallery</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Git GUI Project</h3>
-                        <p>Demonstrates proficiency with Git graphical user interface tools for visual repository
-                            management. Showcases understanding of both command-line and GUI-based workflows for
-                            efficient version control operations.</p>
+                    <div class="vp-details">
+                        <h3 class="vp-title">Cloud Monitoring Digital Twin</h3>
+                        <p class="vp-desc">A cloud-based digital twin system for real-time infrastructure monitoring. Visualizes cloud resource metrics, alerts, and performance data in a live dashboard environment.</p>
                         <div class="project-tags">
-                            <span class="tag">Git GUI</span>
-                            <span class="tag">Repository Management</span>
-                            <span class="tag">Visualization</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Monitoring</span>
+                            <span class="tag">Digital Twin</span>
+                            <span class="tag">Infrastructure</span>
+                        </div>
+                        <div class="vp-links">
+                            <a href="https://github.com/deransiyadorinj/cloud-monitoring-digital-twin.git" target="_blank" rel="noopener noreferrer" class="vp-btn vp-btn-github">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <span class="vp-btn vp-btn-placeholder">
+                                <i class="fab fa-instagram"></i> <em>Instagram Demo &mdash; Coming Soon</em>
+                            </span>
+                            <span class="vp-btn vp-btn-placeholder">
+                                <i class="fab fa-linkedin"></i> <em>LinkedIn Post &mdash; Coming Soon</em>
+                            </span>
                         </div>
                     </div>
-                    <a href="https://github.com/deransiyadorinj/Git-GUI.git" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-project">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-user-circle"></i>
+            </div>
+
+            <!-- PROJECT 3: Network Design Simulation Enterprise -->
+            <div class="vp-card">
+                <div class="vp-badge vp-badge-network">Networking Project</div>
+                <div class="vp-body">
+                    <div class="vp-gallery">
+                        <img src="assets/proj3-cover.png" alt="Network Design Simulation Cover"
+                            class="vp-cover-img"
+                            onclick="openGallery('proj3', 0)"
+                            title="Click to view all images">
+                        <div class="vp-gallery-hint"><i class="fas fa-images"></i> Click to view gallery</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Professional Portfolio Website</h3>
-                        <p>Modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. Features
-                            dark theme design, smooth animations, and comprehensive sections showcasing skills,
-                            projects, certifications, and professional information.</p>
+                    <div class="vp-details">
+                        <h3 class="vp-title">Network Design Simulation Enterprise</h3>
+                        <p class="vp-desc">Enterprise-level network design and simulation project. Covers complex topology design, VLAN configuration, routing protocols, and end-to-end connectivity in a simulated enterprise environment.</p>
                         <div class="project-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Responsive Design</span>
+                            <span class="tag">Networking</span>
+                            <span class="tag">Enterprise</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">VLAN</span>
+                            <span class="tag">Routing</span>
+                        </div>
+                        <div class="vp-links">
+                            <a href="https://github.com/deransiyadorinj/network-design-simulation.git" target="_blank" rel="noopener noreferrer" class="vp-btn vp-btn-github">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <span class="vp-btn vp-btn-placeholder">
+                                <i class="fab fa-instagram"></i> <em>Instagram Demo &mdash; Coming Soon</em>
+                            </span>
+                            <span class="vp-btn vp-btn-placeholder">
+                                <i class="fab fa-linkedin"></i> <em>LinkedIn Post &mdash; Coming Soon</em>
+                            </span>
                         </div>
                     </div>
-                    <a href="https://github.com/deransiyadorinj/My-Portfolio.git" target="_blank"
-                        rel="noopener noreferrer" class="btn btn-project">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
                 </div>
+            </div>
+
+            <!-- More Projects on GitHub -->
+            <div class="more-projects-note">
+                <i class="fab fa-github"></i>
+                <span>For more projects, visit my <a href="https://github.com/deransiyadorinj" target="_blank" rel="noopener noreferrer">GitHub</a>.</span>
             </div>
         </div>
     </section>
+
+    <!-- IMAGE LIGHTBOX / GALLERY MODAL -->
+    <div id="galleryModal" class="gallery-modal" onclick="closeGalleryOnBackdrop(event)">
+        <button class="gallery-close" onclick="closeGallery()" aria-label="Close">&times;</button>
+        <button class="gallery-nav gallery-prev" onclick="changeGalleryImage(-1)" aria-label="Previous">&#8249;</button>
+        <div class="gallery-modal-content">
+            <img id="galleryModalImg" src="" alt="Project Image" class="gallery-modal-img">
+            <div class="gallery-counter" id="galleryCounter"></div>
+        </div>
+        <button class="gallery-nav gallery-next" onclick="changeGalleryImage(1)" aria-label="Next">&#8250;</button>
+    </div>
 
     <!-- Certifications Section -->
     <section id="certifications" class="certifications-section">
@@ -360,12 +462,12 @@
             <div class="section-header">
                 <h2 class="section-title"><span class="gradient-text">Certifications</span></h2>
                 <div class="title-underline"></div>
-                <p class="section-subtitle">Continuous learning across diverse technology domains</p>
+                <p class="section-subtitle">35 Completed courses &amp; certifications across Cloud, AI, Security, Full Stack, Networking &amp; Data Science</p>
             </div>
             <div class="cert-stats">
                 <div class="cert-count">
-                    <div class="count-number" data-target="29">0</div>
-                    <p>Total Certifications</p>
+                    <div class="count-number" data-target="35">0</div>
+                    <p>Total Completed Certifications</p>
                 </div>
             </div>
             <div class="cert-domains">
@@ -387,7 +489,7 @@
                 </div>
                 <div class="domain-badge">
                     <i class="fas fa-database"></i>
-                    <span>Data Science & Analytics</span>
+                    <span>Data Science &amp; Analytics</span>
                 </div>
                 <div class="domain-badge">
                     <i class="fas fa-robot"></i>
@@ -399,7 +501,7 @@
                 </div>
                 <div class="domain-badge">
                     <i class="fas fa-users"></i>
-                    <span>Leadership & Agile</span>
+                    <span>Leadership &amp; Agile</span>
                 </div>
                 <div class="domain-badge">
                     <i class="fas fa-chart-line"></i>
@@ -407,15 +509,23 @@
                 </div>
                 <div class="domain-badge">
                     <i class="fab fa-python"></i>
-                    <span>Python & C++</span>
+                    <span>Python &amp; C++</span>
+                </div>
+                <div class="domain-badge">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Full Stack Development</span>
                 </div>
                 <div class="domain-badge">
                     <i class="fas fa-code"></i>
                     <span>Web Development</span>
                 </div>
                 <div class="domain-badge">
+                    <i class="fab fa-linux"></i>
+                    <span>Kali Linux</span>
+                </div>
+                <div class="domain-badge">
                     <i class="fas fa-microchip"></i>
-                    <span>IoT</span>
+                    <span>IoT &amp; Embedded</span>
                 </div>
                 <div class="domain-badge">
                     <i class="fas fa-briefcase"></i>
@@ -429,53 +539,353 @@
                     <i class="fas fa-cogs"></i>
                     <span>DevOps &amp; CI/CD</span>
                 </div>
-            </div>
-            <div class="cert-highlights">
-                <div class="highlight-card">
-                    <i class="fas fa-award"></i>
-                    <h4>Licensed Certification</h4>
-                    <p>AI Tools Workshop - Certified on AI fundamentals &amp; tools usage</p>
+                <div class="domain-badge">
+                    <i class="fas fa-robot"></i>
+                    <span>RPA Automation</span>
                 </div>
-                <div class="highlight-card">
-                    <i class="fas fa-certificate"></i>
-                    <h4>Diploma of Completion</h4>
-                    <p>Introduction to UiPath IXP - Robotic Process Automation</p>
+                <div class="domain-badge">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Machine Learning</span>
                 </div>
-                <div class="highlight-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4>Webinar Certificate</h4>
-                    <p>Future of Web Development with AI - Industry Webinar</p>
-                </div>
-                <div class="highlight-card">
-                    <i class="fas fa-trophy"></i>
-                    <h4>Hackathon Certificate</h4>
-                    <p>CIT Hackathon - Participant &amp; Problem Solver</p>
-                </div>
-                <div class="highlight-card">
-                    <i class="fas fa-chart-bar"></i>
-                    <h4>Course Completion</h4>
-                    <p>Data Analytics - Completed with distinction &amp; practical projects</p>
-                </div>
-                <div class="highlight-card">
-                    <i class="fas fa-medal"></i>
-                    <h4>🏅 Class Topper</h4>
-                    <p>AI &amp; Data Science Dept. - Top performer of the batch</p>
-                </div>
-                <div class="highlight-card">
-                    <i class="fas fa-cloud"></i>
-                    <h4>Cloud Computing</h4>
-                    <p>Cloud Computing Fundamentals &amp; AWS Cloud Basics - Certified</p>
-                </div>
-                <div class="highlight-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h4>Network Security</h4>
-                    <p>Network Security Essentials - Cyber defense &amp; protocol security</p>
+                <div class="domain-badge">
+                    <i class="fas fa-database"></i>
+                    <span>Database &amp; SQL</span>
                 </div>
             </div>
+
+            <!-- CERTIFICATE VISUAL GALLERY GRID -->
+            <div class="cert-gallery-grid">
+
+                <!-- 1. AI Tools & ChatGPT Workshop -->
+                <div class="cert-card" onclick="openGallery('certificates', 0)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-ai-tools-chatgpt.png" alt="AI Tools and ChatGPT Workshop" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-blue"><i class="fas fa-check-circle"></i> be10x Verified</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-robot"></i> Artificial Intelligence</div>
+                        <h4 class="cert-title">AI Tools &amp; ChatGPT Workshop</h4>
+                        <p class="cert-desc">Create AI presentations, automate data analysis, and debug code with ChatGPT &amp; AI tools.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> be10x</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Jan 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Introduction to Generative AI -->
+                <div class="cert-card" onclick="openGallery('certificates', 1)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-intro-genai.png" alt="Introduction to Generative AI" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-purple"><i class="fas fa-star"></i> IGNITERS</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-magic"></i> Generative AI</div>
+                        <h4 class="cert-title">Introduction to Generative AI</h4>
+                        <p class="cert-desc">Generative AI architectures, prompt engineering patterns, and enterprise AI transformation strategies.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> IGNITERS</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Sep 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Introduction to Artificial Intelligence -->
+                <div class="cert-card" onclick="openGallery('certificates', 2)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-intro-ai.png" alt="Introduction to Artificial Intelligence" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-gold"><i class="fas fa-certificate"></i> Simplilearn</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-brain"></i> Artificial Intelligence</div>
+                        <h4 class="cert-title">Introduction to Artificial Intelligence</h4>
+                        <p class="cert-desc">Foundational AI theories, ML algorithms, deep neural networks, and intelligent agent design principles.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Simplilearn SkillUp</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Aug 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Website UI/UX Designing using ChatGPT -->
+                <div class="cert-card" onclick="openGallery('certificates', 3)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-uiux-chatgpt.png" alt="Website UI/UX Designing using ChatGPT" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-pink"><i class="fas fa-palette"></i> Simplilearn</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-pencil-ruler"></i> UI/UX Design</div>
+                        <h4 class="cert-title">Website UI/UX Designing using ChatGPT</h4>
+                        <p class="cert-desc">AI-assisted wireframing, UX persona mapping, UI copy generation, and layout optimization.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Simplilearn SkillUp</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Sep 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Introduction to Cloud Computing -->
+                <div class="cert-card" onclick="openGallery('certificates', 4)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-cloud-computing.png" alt="Introduction to Cloud Computing" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-blue"><i class="fas fa-cloud"></i> Simplilearn</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-cloud"></i> Cloud Computing</div>
+                        <h4 class="cert-title">Introduction to Cloud Computing</h4>
+                        <p class="cert-desc">IaaS, PaaS, SaaS models, virtualization architectures, cloud security, and public cloud fundamentals.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Simplilearn SkillUp</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Aug 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Python Essentials 1 -->
+                <div class="cert-card" onclick="openGallery('certificates', 5)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-python-essentials-1.png" alt="Python Essentials 1" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-blue"><i class="fab fa-python"></i> Cisco</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fab fa-python"></i> Programming</div>
+                        <h4 class="cert-title">Python Essentials 1</h4>
+                        <p class="cert-desc">Python syntax, data types, control flow, functions, modular structure, and algorithmic thinking.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Cisco Networking Academy</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Jul 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Python Essentials 2 -->
+                <div class="cert-card" onclick="openGallery('certificates', 6)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-python-essentials-2.png" alt="Python Essentials 2" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-blue"><i class="fab fa-python"></i> Cisco</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fab fa-python"></i> Advanced Python</div>
+                        <h4 class="cert-title">Python Essentials 2</h4>
+                        <p class="cert-desc">Object-Oriented Programming, inheritance, exceptions, file processing, and generators.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Cisco Networking Academy</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Jul 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Networking Basics -->
+                <div class="cert-card" onclick="openGallery('certificates', 7)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-networking-basics.png" alt="Networking Basics" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-green"><i class="fas fa-network-wired"></i> Cisco</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-network-wired"></i> Networking</div>
+                        <h4 class="cert-title">Networking Basics</h4>
+                        <p class="cert-desc">OSI &amp; TCP/IP models, Ethernet, IPv4/IPv6 addressing, and local area network topologies.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Cisco Networking Academy</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Jun 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Networking Devices & Initial Configuration -->
+                <div class="cert-card" onclick="openGallery('certificates', 8)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-networking-devices.png" alt="Networking Devices and Initial Configuration" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-green"><i class="fas fa-server"></i> Cisco</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-sliders-h"></i> Network Config</div>
+                        <h4 class="cert-title">Networking Devices &amp; Initial Config</h4>
+                        <p class="cert-desc">Configuring routers, switches, consoles, default gateways, and network security baselines.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Cisco Networking Academy</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Jun 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Introduction to Cyber Security -->
+                <div class="cert-card" onclick="openGallery('certificates', 9)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-cyber-security.png" alt="Introduction to Cyber Security" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-gold"><i class="fas fa-shield-alt"></i> Simplilearn</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-user-shield"></i> Cyber Security</div>
+                        <h4 class="cert-title">Introduction to Cyber Security</h4>
+                        <p class="cert-desc">Threat landscapes, malware defense, CIA triad, cryptography, and network defense principles.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Simplilearn SkillUp</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Aug 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Introduction to Kali Linux Basics -->
+                <div class="cert-card" onclick="openGallery('certificates', 10)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-kali-linux.png" alt="Introduction to Kali Linux Basics" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-gold"><i class="fab fa-linux"></i> Simplilearn</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-terminal"></i> Linux &amp; Security</div>
+                        <h4 class="cert-title">Introduction to Kali Linux Basics</h4>
+                        <p class="cert-desc">Penetration testing tools, network scanning, file permissions, and ethical security auditing.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Simplilearn SkillUp</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Jun 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Data Analytics & AI Tools -->
+                <div class="cert-card" onclick="openGallery('certificates', 11)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-data-analytics-ai.png" alt="Data Analytics and AI Tools" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-blue"><i class="fas fa-chart-pie"></i> NPRCET</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-chart-line"></i> Data Science</div>
+                        <h4 class="cert-title">Data Analytics &amp; AI Tools</h4>
+                        <p class="cert-desc">5-day hands-on course: exploratory data analysis, AI utility integration, and business dashboards.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> NPRCET &amp; Reccsar</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Jan 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. Agile Project Management -->
+                <div class="cert-card" onclick="openGallery('certificates', 12)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-agile-pm.png" alt="Agile Project Management" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-blue"><i class="fas fa-tasks"></i> HP LIFE</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-sync-alt"></i> Agile &amp; Scrum</div>
+                        <h4 class="cert-title">Agile Project Management</h4>
+                        <p class="cert-desc">Defining MVPs, iterative &amp; incremental delivery, Scrum &amp; Kanban, and cross-team productivity.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> HP Foundation</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Sep 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14. CIT Sparkthon Hackathon -->
+                <div class="cert-card" onclick="openGallery('certificates', 13)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-cit-hackathon.png" alt="CIT Sparkthon Hackathon" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-gold"><i class="fas fa-trophy"></i> CIT</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-code-branch"></i> Hackathon</div>
+                        <h4 class="cert-title">Sparkthon - National Hackathon</h4>
+                        <p class="cert-desc">National-level participation tackling real-world engineering challenges at Coimbatore Institute of Technology.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> CIT Coimbatore</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Feb 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15. Full Stack Development Internship -->
+                <div class="cert-card" onclick="openGallery('certificates', 14)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-fullstack-internship.png" alt="Certificate of Internship - Full Stack Development" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-pink"><i class="fas fa-briefcase"></i> M2Technologies</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-laptop-code"></i> Full Stack Development</div>
+                        <h4 class="cert-title">Internship: Full Stack Web Dev</h4>
+                        <p class="cert-desc">1-month industry internship: HTML5, CSS3, JavaScript, PHP, and SQL backend engineering at M2Technologies.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> M2Technologies</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Jun 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16. Topper of the Class - SPL Merit -->
+                <div class="cert-card" onclick="openGallery('certificates', 15)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-topper-of-class.png" alt="Topper of the Class - Certificate of Merit" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-gold"><i class="fas fa-medal"></i> Academic Honor</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-graduation-cap"></i> Academic Excellence</div>
+                        <h4 class="cert-title">🏅 Topper of the Class - SPL Merit</h4>
+                        <p class="cert-desc">Awarded Topper of the Class in AI &amp; Data Science at NPR Group 10th Students Premier League 2K26.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> NPR Group</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> 2K26</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 17. Web Development (IGNITERS) -->
+                <div class="cert-card" onclick="openGallery('certificates', 16)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-web-development.png" alt="Web Development Certificate" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-purple"><i class="fas fa-star"></i> IGNITERS</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-code"></i> Web Development</div>
+                        <h4 class="cert-title">Web Development Webinar</h4>
+                        <p class="cert-desc">Modern web application architecture, responsive frontend design, and dynamic web integration principles.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> IGNITERS</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Dec 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 18. Introduction to IoT (Simplilearn) -->
+                <div class="cert-card" onclick="openGallery('certificates', 17)" title="Click to view full certificate">
+                    <div class="cert-img-wrapper">
+                        <img src="assets/certificates/cert-intro-iot.png" alt="Introduction to IoT Certificate" class="cert-img" loading="lazy">
+                        <div class="cert-overlay"><span class="cert-view-btn"><i class="fas fa-search-plus"></i> View Certificate</span></div>
+                        <span class="cert-badge cert-badge-blue"><i class="fas fa-microchip"></i> Simplilearn</span>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-category"><i class="fas fa-satellite-dish"></i> IoT &amp; Embedded</div>
+                        <h4 class="cert-title">Introduction to IoT</h4>
+                        <p class="cert-desc">Connected devices, IoT architecture, sensor networks, cloud telemetry, and smart systems automation.</p>
+                        <div class="cert-footer">
+                            <span class="cert-issuer"><i class="fas fa-award"></i> Simplilearn SkillUp</span>
+                            <span class="cert-date"><i class="far fa-calendar-alt"></i> Sep 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="cert-action">
                 <a href="assets/Certificates.pdf" target="_blank" rel="noopener noreferrer"
                     class="btn btn-primary btn-large">
-                    <i class="fas fa-file-pdf"></i> View All Certificates
+                    <i class="fas fa-file-pdf"></i> View All Certificate Details
                 </a>
             </div>
         </div>
@@ -500,11 +910,11 @@
                         Showcasing my journey toward becoming a Cloud Engineering professional.
                     </p>
                     <div class="resume-buttons">
-                        <a href="assets/Deransiya_Dorin_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                        <a href="assets/Deransiya_Dorin_J_Resume.pdf" target="_blank" rel="noopener noreferrer"
                             class="btn btn-primary">
                             <i class="fas fa-eye"></i> View Resume
                         </a>
-                        <a href="assets/Deransiya_Dorin_Resume.pdf" download class="btn btn-secondary">
+                        <a href="assets/Deransiya_Dorin_J_Resume.pdf" download class="btn btn-secondary">
                             <i class="fas fa-download"></i> Download PDF
                         </a>
                     </div>
@@ -521,6 +931,35 @@
                 <div class="title-underline"></div>
                 <p class="section-subtitle">Let's connect and discuss opportunities</p>
             </div>
+
+            <!-- Company Block (shown first as heading-level block) -->
+            <div class="company-section-header">
+                <div class="company-header-logo">
+                    <a href="https://www.instagram.com/edencloudixtechnologies?igsi=dWJnNTk3dWxyYWx6" target="_blank" rel="noopener noreferrer" title="Edencloudix Technologies">
+                        <img src="assets/edencloudixtechnologies.jpeg" alt="Edencloudix Technologies" class="company-logo-contact">
+                    </a>
+                </div>
+                <div class="company-header-info">
+                    <h3 class="company-name">Edencloudix Technologies</h3>
+                    <div class="company-links">
+                        <a href="mailto:edencloudixtechnologies@gmail.com" class="company-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>edencloudixtechnologies@gmail.com</span>
+                        </a>
+                        <a href="https://www.instagram.com/edencloudixtechnologies?igsi=dWJnNTk3dWxyYWx6" target="_blank" rel="noopener noreferrer" class="company-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>@edencloudixtechnologies</span>
+                        </a>
+                    </div>
+                    <!-- DM note under company Instagram -->
+                    <div class="dm-note-inline">
+                        <i class="fab fa-instagram"></i>
+                        <span>For Project DM Me &mdash; <a href="https://www.instagram.com/edencloudixtechnologies?igsi=dWJnNTk3dWxyYWx6" target="_blank" rel="noopener noreferrer" class="dm-link">@edencloudixtechnologies</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Contact Grid -->
             <div class="contact-grid">
                 <div class="contact-card">
                     <div class="contact-icon">
@@ -544,6 +983,8 @@
                     <p>Dindigul, Tamil Nadu, India</p>
                 </div>
             </div>
+
+            <!-- Social Links -->
             <div class="social-links">
                 <a href="https://github.com/deransiyadorinj" target="_blank" rel="noopener noreferrer"
                     class="social-link">
@@ -555,6 +996,11 @@
                     onclick="window.open(this.href, '_blank'); return false;">
                     <i class="fab fa-linkedin"></i>
                     <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/deransiya_dorin?utm_source=qr&igsi=MXUxNzMzbWtvdXNpOQ=="
+                    target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
                 </a>
             </div>
         </div>
