@@ -307,7 +307,11 @@ const galleryData = {
         'assets/certificates/cert-fullstack-internship.png',
         'assets/certificates/cert-topper-of-class.png',
         'assets/certificates/cert-web-development.png',
-        'assets/certificates/cert-intro-iot.png'
+        'assets/certificates/cert-intro-iot.png',
+        'assets/certificates/cert-parallax-hackathon-vit.png',
+        'assets/certificates/cert-aws-cloud-practitioner-essentials.png',
+        'assets/certificates/cert-cisco-data-analytics-essentials.png',
+        'assets/certificates/cert-zendev-industrial-visit.png'
     ]
 };
 
