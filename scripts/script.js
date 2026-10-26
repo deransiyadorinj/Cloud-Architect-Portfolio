@@ -311,7 +311,8 @@ const galleryData = {
         'assets/certificates/cert-parallax-hackathon-vit.png',
         'assets/certificates/cert-aws-cloud-practitioner-essentials.png',
         'assets/certificates/cert-cisco-data-analytics-essentials.png',
-        'assets/certificates/cert-zendev-industrial-visit.png'
+        'assets/certificates/cert-zendev-industrial-visit.png',
+        'assets/certificates/cert-intellathon-hackathon.png'
     ]
 };
 
